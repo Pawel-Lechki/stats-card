@@ -109,3 +109,42 @@ footer {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@media screen and (min-width: 768px) {
+    .container { 
+        max-width: 1440px;
+    }
+    .card { 
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .card-img img {
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 8px;
+    }
+    .card-content {
+        padding: 0 100px 0 60px;
+        text-align: left;
+    }
+
+    .card-content p {
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+
+    .card-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-desc { 
+        padding: 20px 0;
+    }
+    .card-stats { 
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
